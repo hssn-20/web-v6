@@ -9,8 +9,7 @@ in_search_index = true
 
 ## Hardware
 
-My work laptop is a [Dell Latitude 7400](https://www.dell.com/en-in/work/shop/business-laptop-notebook-computers/latitude-7400-business-laptop/spd/latitude-14-7400-laptop). I do have a 2016 Apple Macbook Pro (13"/8GB/128GB version) which is _rarely_ used these days.
-
+My work laptop is a [Dell Latitude 7400](https://www.dell.com/en-in/work/shop/business-laptop-notebook-computers/latitude-7400-business-laptop/spd/latitude-14-7400-laptop). 
 The other stuff on the desk includes:
 
 - **Monitor**: [Acer ET322QK](https://www.amazon.in/gp/product/B0788GQM7C/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1). Purchased this recently. I used to drool over multi-monitor setups before but I just decided to get one big monitor (this one is 31.5"). The 4K UHD really really does make the whole experience better. The texts look crisper, extra room size to stack multiple windows and the colours are overall so much better than my old monitor which was a cheap BenQ 24" which I used for about 4 years.
@@ -83,11 +82,7 @@ I pair `zsh` with [starship](https://starship.rs/) which makes the entire termin
 
 ## Future Goals
 
-It took me a good amount of experimentation with different apps, peripherals and distro-hopping but I finally feel like my current workflow is reliable and something that won't require any tweaking for a good amount of time. Shortly, I'd like to figure out a setup to automate my backups from my self hosted `git` server as well as set up a Nextcloud WebDAV to get rid of Joplin's Dropbox sync.
-
-But that's for some other day, the weather in Bengaluru is amazing for a month like July, so I'll make some hot ginger tea and enjoy the rainy evening for now.
-
-Also, bonus picture. This is how my setup looks at night!
+I hope to get a standing desk at somepoint. 
 
 ![image](/images/night-setup.jpg)
 
