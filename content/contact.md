@@ -1,9 +1,9 @@
 +++
-title =  "Contact Me"
+title =  "Contact"
 in_search_index = true
 +++
 
-Email me at _hahme06@google.com_
+Email me at _hahme06@gmail.com_
 
 My other identities:
 
