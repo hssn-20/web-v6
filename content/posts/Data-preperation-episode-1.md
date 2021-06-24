@@ -9,12 +9,27 @@ tags = ["Data", "Cleaning"]
 [extra]
 og_preview_img = "/images/joplin-desktop.png"
 +++
+![image](https://raw.githubusercontent.com/chiphuyen/ml-interviews-book/master/contents/images/image1.png)
 
-At this stage it's pretty much a cliche that 80% of the job of a data scientist is data cleaning/processing. In this post, I hope to provide a quick set of first steps you can take in your projects. Feel free to scroll to the bottom for links to other resources. 
+At this stage it's pretty much a cliche that 80% of the job of a data scientist is data cleaning/processing. For a large part of a data projects' life, processing is essential.The tasks differ based on the type of data you're dealing with but they share a few [commonalities](https://machinelearningmastery.com/data-preparation-for-machine-learning/) which are: 
+> - Data Cleaning:  Identifying and correcting mistakes or errors in the data.
+> - Feature Selection:  Identifying those input variables that are most relevant to the task.
+> - Data Transforms:  Changing the scale or distribution of variables.
+> - Feature Engineering:  Deriving new variables from available data.
+> - Dimensionality Reduction:  Creating compact projections of the data 
 
-## Lifecycle
+In this post, I hope to provide a quick set of first steps you can take in your projects. Feel free to scroll to the bottom for links to other resources.
+
+## Cleanimdsmkdfk
 
 ![image](https://raw.githubusercontent.com/chiphuyen/ml-interviews-book/master/contents/images/image1.png)
+
+For a large part of a data projects' life, data processing is essential.The tasks differ based on the type of data you're dealing with but they share a few commonalities which are: 
+> - Data Cleaning:  Identifying and correcting mistakes or errors in the data.
+> - Feature Selection:  Identifying those input variables that are most relevant to the task.
+> - Data Transforms:  Changing the scale or distribution of variables.
+> - Feature Engineering:  Deriving new variables from available data.
+> - Dimensionality Reduction:  Creating compact projections of the data
 
 
 
