@@ -1,32 +1,22 @@
 +++
-title = "How I take Notes"
-date = 2021-04-14T08:10:55+05:30
+title = "Data preperation: Episode 1"
+date = 2021-06-23T08:10:55+05:30
 type = "post"
-description = "My note-taking system using Joplin."
+description = "Basics of data preperation."
 in_search_index = true
 [taxonomies]
-tags = ["Productivity", "Tools"]
+tags = ["Data", "Cleaning"]
 [extra]
 og_preview_img = "/images/joplin-desktop.png"
 +++
 
-Over the past 2-3 years, note-taking apps have become all the rage. Note-taking is an extremely subjective topic and a lot of it depends on the individual's workflow. There's no one size fits all and maybe that justifies the ever-expanding landscape of such apps. I've tried a few popular ones (Notion, Roam Research) in the recent past but never really quite stuck to any after the initial hype phase.
+At this stage it's pretty much a cliche that 80% of the job of a data scientist is data cleaning/processing. In this post, I hope to provide a quick set of first steps you can take in your projects. Feel free to scroll to the bottom for links to other resources. 
 
-I even collaborated with [@iamd3vil](https://sarat.dev/) to make our [own version](https://github.com/hackstream/zettel/) of the Zettelkasten based note-taking app. I found the Zettelkasten system to be really useful on paper but then again, I didn't use it after a few weeks.
+## Lifecycle
 
-Tried the old school way of Bullet Journal (and I did end up liking it quite a lot) but it was not so practical in many cases (like documenting code snippets, URLs etc).
+![image](https://raw.githubusercontent.com/chiphuyen/ml-interviews-book/master/contents/images/image1.png)
 
-Disgruntled with all the options, I just had a simple folder on my laptop with some markdown files in it. It was a stop-gap solution until I found something better.
 
-**TL;DR**: I've been through a pendulum phase of finding a new note-taking app, wasting time to set it up the "proper way" and then just end up not using it.
-
-## Enter Joplin
-
-![image](/images/joplin-desktop.png)
-
-Thanks to [@shantanugoel](https://shantanugoel.com) who introduced me to [Joplin](https://joplinapp.org/). He's a [heavy user](https://shantanugoel.com/2020/03/20/hammerspoon-backup-joplin-notes-dotfiles-git-macos/) of it as well and that gave me some confidence to try it out. I initially disliked it because of _not-so-great-looking_ UI theme and how it essentially looked _just_ an editor. Admittedly, I was proven wrong quickly in my initial judgement. As I gave more time to it, I noticed I kept coming back to Joplin "naturally" and stuck through it because it's so damn simple to use. Notion, for people who have tried it would know it complicates a lot of simple tasks. You need to create databases to render a simple table, every component is a "block" (a new page) and yes it's slow (although they are [working on it to make it better](https://www.notion.so/notion/Focus-on-performance-reliability-89f937a6ccc04905b1dcfa878537e08d), just to be fair). Notion focuses a lot on team collaboration features, which I didn't need for my "personal" note-taking system.
-
-**TL;DR**: Joplin is fast, it's open-source, it's based on Markdown, and it's simple to use. A tool you just forget that it exists, because it becomes a natural extension to your workflow. It has a great plugin system that you can use to extend it and build your own utilities on top of it. The search is based on `sqlite3` FTS which is pretty awesome!
 
 ## Workflow
 
