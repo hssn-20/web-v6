@@ -22,7 +22,7 @@ In this post, I hope to provide a quick set of first steps you can take in your 
 
 ## Cleanimdsmkdfk
 
-![image](https://raw.githubusercontent.com/chiphuyen/ml-interviews-book/master/contents/images/image1.png)
+![image](/images/ML_CYCLE.PNG)
 
 For a large part of a data projects' life, data processing is essential.The tasks differ based on the type of data you're dealing with but they share a few commonalities which are: 
 > - Data Cleaning:  Identifying and correcting mistakes or errors in the data.
