@@ -20,68 +20,14 @@ At this stage it's pretty much a cliche that 80% of the job of a data scientist 
 
 In this post, I hope to provide a quick set of first steps you can take in your projects. Feel free to scroll to the bottom for links to other resources.
 
-## Cleanimdsmkdfk
+## Cleaning
 
 ![image](/images/ML_CYCLE.PNG)
 
-For a large part of a data projects' life, data processing is essential.The tasks differ based on the type of data you're dealing with but they share a few commonalities which are: 
-> - Data Cleaning:  Identifying and correcting mistakes or errors in the data.
-> - Feature Selection:  Identifying those input variables that are most relevant to the task.
-> - Data Transforms:  Changing the scale or distribution of variables.
-> - Feature Engineering:  Deriving new variables from available data.
-> - Dimensionality Reduction:  Creating compact projections of the data
+Before data can be used, it must be processed. The steps of the data processing pipeline must be coded and documented fully. A good practice is to retain your original datasets and generate the final version via version controlled scripts. Another good practice is to set aside a portion for testing before [processing](https://www.kaggle.com/c/seti-breakthrough-listen/discussion/246772).
 
 
-
-## Workflow
-
-Joplin revolves around the concept of **notebooks**. Notebooks are broader categories for your content and you can nest multiple subnotebooks for specific categories.
-
-I've the following notebooks and subnotebooks in my Joplin setup:
-
-```
-- Bookmarks
-  - Twitter Threads
-  - HN Threads
-  - Articles
-  - Design Inspo
-  - Youtube Videos
-- Inbox
-  - Links
-  - Adhoc Notes
-- Personal
-  - Finance
-  - Dev Setup
-  - OSS Ideas
-  - Self Hosted Setup
-- Work
-  - Org-Stuff
-  - Redacted
-```
-
-Over the week, I primarily use the `Inbox/Adhoc Notes` notebook as a brain dump. I don't focus much on the structure, the aim is to get the content out and stored. I'm also someone who doesn't like to keep more than 5 browser tabs open at any time, so I use `Links` notebook with Joplin's [Web Clipper](https://joplinapp.org/clipper/) service to store these links to read later.
-
-Every weekend, I clean up these notebooks to achieve "Inbox Zero". The idea is to move all these ad-hoc notes to their proper notebooks, annotated with tags. All the useful links are moved in the appropriate `Bookmarks/...` notebook as well. This helps me find stuff quicker at a later time.
-
-I heavily use Tags in all my notebooks, which allows me to have a unified view of different kind of stuff I’ve. For example “golang” tag in my Work notes and Personal notes, allows me to see all the “golang” stuff together in one place.
-
-For stuff that can be shared publicly, I basically copy-paste those notes in my [public wiki](https://notes.mrkaran.dev/) as well. This allows me to share snippets/commands with others, which Joplin cannot do.
-
-## Synchronisation
-
-Joplin provides a bunch of different [sync](https://joplinapp.org/#synchronisation) options. I've tried Dropbox, Nextcloud and AWS S3 targets in the past but off late there's a new sync option, [Joplin Server](https://github.com/laurent22/joplin/blob/dev/packages/server/README.md) which provides native sync for Joplin files. I found this option to be the best so far because Dropbox/OneNote etc have API limits and syncing on an initial device with lots of notes will be time-consuming.
-
-I self-host this Joplin Sync Server on my server and have configured the Android app and the Desktop app to use this server endpoint as the sync `target`. So far so good, although it's relatively a newer sync option so it's pertinent to have alternate backups.
-
-## Backups and Export
-
-Joplin stores all the files locally on a device in a `sqlite3` DB. It can export notes in markdown/HTML format however the file names are all named with the `id` of the note (and not really the title of the note). I found this to be a bit of a drawback, however, one can quickly whip up a small Python script to fix this using the Joplin API.
-
-Joplin also has the option to export all of the notes and notebooks with their metadata (Geolocation, creation time etc), tags in a custom format called Joplin Export File (JEX). This option is pretty convenient to re-import in a new Joplin installation as well.
-
-Sidenote for people using Joplin Server: Once https://github.com/laurent22/joplin/issues/4836 gets resolved, it'll be possible to do `joplin sync` and cron it, just like other sync targets. 
-
-## Support
+## Missing & miscoded 
 
 Joplin is 100% FOSS and is actively developed by [`@laurent22`](https://github.com/laurent22/) and a few other regular contributors. I contribute `$5/mo` to laurent22 via Github Sponsors. It's more or less the same amount that most note-taking apps charge for personal use as well, so this is just me expressing gratitude for building such a lovely software for the world to use it. I'm not sure of the motivations of `laurent22` behind building this and I don't wanna incorrectly assume anything either, but I guess some amount of financial incentive makes the whole deal sustainable for the open-source ecosystem.
 
