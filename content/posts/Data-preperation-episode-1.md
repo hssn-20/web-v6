@@ -26,21 +26,14 @@ In this post, I hope to provide a quick set of first steps you can take in your 
 
 Before data can be used, it must be processed. The steps of the data processing pipeline must be coded and documented fully. A good practice is to retain your original datasets and generate the final version via version controlled scripts. Another good practice is to set aside a portion for testing before [processing](https://www.kaggle.com/c/seti-breakthrough-listen/discussion/246772).
 
+## Step 1 - Check for outliers & duplicates 
 
-## Missing & miscoded 
+## Step 2 - Check the missing data
 
-Joplin is 100% FOSS and is actively developed by [`@laurent22`](https://github.com/laurent22/) and a few other regular contributors. I contribute `$5/mo` to laurent22 via Github Sponsors. It's more or less the same amount that most note-taking apps charge for personal use as well, so this is just me expressing gratitude for building such a lovely software for the world to use it. I'm not sure of the motivations of `laurent22` behind building this and I don't wanna incorrectly assume anything either, but I guess some amount of financial incentive makes the whole deal sustainable for the open-source ecosystem.
+## Step 3 - 
 
-Thanks for reading! It's been around a year that I am using Joplin and I posted this blog post only after really really using it a lot.
+## The Conclusion & The Resources
 
-I'd love to know about your note-taking setups too, so please reach out to me on the usual channels that I'm available on and feel free to discuss!
+#### Papers
+[Graphical Models for Processing Missing Data](https://arxiv.org/pdf/1801.03583.pdf)
 
-Fin!
-
-#### (Bonus Section) Why Not Obsidian
-
-Yes, Obsidian is comparable to Joplin in a lot of ways. However there's a term in the [license](https://obsidian.md/eula) of Obsidian for personal use that makes it **impossible** to use it for your work stuff:
-
-> You need to pay for Obsidian if and only if you use it for revenue-generating, work-related activities in a company that has two or more people. Get a commercial license for each user if that's the case
-
-I don't have a problem for "paying" for software but such kinda licenses are just BS.
