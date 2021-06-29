@@ -24,10 +24,16 @@ In this post, I hope to provide a quick set of first steps you can take in your 
 ![image](/images/ML_CYCLE.PNG)
 Before data can be used, it must be processed. The steps of the data processing pipeline must be coded and documented fully. A good practice is to retain your original datasets and generate the final version via version controlled scripts. Another good practice is to set aside a portion for the test set before [processing](https://www.kaggle.com/alexisbcook/data-leakage).
 
-Prior to doing any steps, make sure to throughly understand, record and catalogue the data collection process. You need to be able to answer questions like what sensors/forms/surveys were used, how is the data stored etc. This will be important when it comes time to debug. 
+Prior to doing any steps, make sure to throughly understand, record and catalogue the data collection process. You need to be able to answer questions like what sensors/forms/surveys were used, how is the data stored etc. This will be important when it comes time to debugging. 
 
 #### Step 1 - Check for outliers & duplicates 
-Statisticly an outlier is a data point that is significantly different from a given population. What is signifacant really depends on your dataset. For a simple dataset with a normal distrubtion  
+There a lot of different ways of defining an outlier, a common definition is any data point that's significantly different from a given population. What is significant really depends on your dataset.  
+    ```python 
+    
+    ``` 
+
+
+
 
 Duplicates 
 #### Step 2 - Check the missing data
@@ -39,3 +45,4 @@ Duplicates
 #### Sources
 [Graphical Models for Processing Missing Data](https://arxiv.org/pdf/1801.03583.pdf)
 [Detecting and treating outliers in Python](https://towardsdatascience.com/detecting-and-treating-outliers-in-python-part-1-4ece5098b755)
+[Best-Practice Recommendations for Defining, Identifying, and Handling Outliers](https://journals.sagepub.com/doi/10.1177/1094428112470848)
