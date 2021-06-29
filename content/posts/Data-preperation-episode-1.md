@@ -21,19 +21,18 @@ It's a cliche that data scientists spend 80% of their time cleaning/processing d
 In this post, I hope to provide a quick set of first steps you can take in your projects.
 
 ### Cleaning
-
 ![image](/images/ML_CYCLE.PNG)
-
 Before data can be used, it must be processed. The steps of the data processing pipeline must be coded and documented fully. A good practice is to retain your original datasets and generate the final version via version controlled scripts. Another good practice is to set aside a portion for the test set before [processing](https://www.kaggle.com/alexisbcook/data-leakage).
 
 Prior to doing any steps, make sure to throughly understand, record and catalogue the data collection process. You need to be able to answer questions like what sensors/forms/surveys were used, how is the data stored etc. This will be important when it comes time to debug. 
 
 #### Step 1 - Check for outliers & duplicates 
+Statisticly an outlier is a data point that is significantly different from a given population. How that looks, really depends on your dataset.
 
-An outlier is a data point that is significantly different from a population. 
+Duplicates 
 #### Step 2 - Check the missing data
 
-#### Step 3 - Impute 
+#### Step 3 - Impute and normalise
 
 #### Conclusion & Resources
 
