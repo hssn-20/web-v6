@@ -27,20 +27,15 @@ Before data can be used, it must be processed. The steps of the data processing 
 Prior to doing any steps, make sure to throughly understand, record and catalogue the data collection process. You need to be able to answer questions like what sensors/forms/surveys were used, how is the data stored etc. This will be important when it comes time to debug. 
 
 #### Step 1 - Check for outliers & duplicates 
-Statisticly an outlier is a data point that is significantly different from a given population. How that looks, really depends on your dataset.
+Statisticly an outlier is a data point that is significantly different from a given population. What is signifacant really depends on your dataset. For a simple dataset with a normal distrubtion  
 
 Duplicates 
 #### Step 2 - Check the missing data
 
 #### Step 3 - Impute and normalise
 
-#### Conclusion & Resources
+#### Conclusion 
 
-##### Articles
+#### Sources
 [Graphical Models for Processing Missing Data](https://arxiv.org/pdf/1801.03583.pdf)
-
-##### Books
-
-
-##### Tools
-
+[Detecting and treating outliers in Python](https://towardsdatascience.com/detecting-and-treating-outliers-in-python-part-1-4ece5098b755)
