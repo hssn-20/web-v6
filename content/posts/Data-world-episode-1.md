@@ -1,5 +1,5 @@
 +++
-title = "Data preperation: Episode 1, Cleaning"
+title = "Data world: Episode 1, Cleaning"
 date = 2021-06-23T08:10:55+05:30
 type = "post"
 description = "Basics of data preperation."
