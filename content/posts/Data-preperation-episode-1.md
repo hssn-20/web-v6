@@ -34,16 +34,18 @@ There a lot of different ways of defining an outlier, a common definition is; an
 #### Step 2 - Check the missing data
 What type of data is missing? Is it miscoded? How is the missing data labelled? Is it missing completely at random or is the missingness specific? What is the structure of the missing information? These are just a few of the questions you should be able to answer. The [missingno](https://github.com/ResidentMario/missingno) library provides a quick way to visualise the missing data and hopefuly begin to answer some of those questions. 
 #### Step 3 - Impute 
-This step isn't always [necessary](https://www.paultwin.com/wp-content/uploads/Lodder_1140873_Paper_Imputation.pdf) as you can get away with listwise or pairwise deletion for certain datasets. 
+Scikit-learn [provides](https://scikit-learn.org/stable/modules/impute.html) a few functions that can be used to impute missing values however this step isn't always [necessary](https://www.paultwin.com/wp-content/uploads/Lodder_1140873_Paper_Imputation.pdf) as you can get away with listwise or pairwise deletion for certain datasets. The question of when that is the case really depends on the domain
 #### Conclusion 
-So to conclude, when dealing with new dataset: 
+So to conclude, when dealing with a new dataset: 
 - Check duplicates
 - Check outliers
 - Check the missing data
-- Impute
+- Impute(or not)
+
 #### Sources
-[Graphical Models for Processing Missing Data](https://arxiv.org/pdf/1801.03583.pdf)
-[Detecting and treating outliers in Python](https://towardsdatascience.com/detecting-and-treating-outliers-in-python-part-1-4ece5098b755)
-[Best-Practice Recommendations for Defining, Identifying, and Handling Outliers](https://journals.sagepub.com/doi/10.1177/1094428112470848)
-[A Comprehensive Study of the Past, Present, and Future of Data Deduplication](https://ieeexplore.ieee.org/abstract/document/7529062)
+- [Graphical Models for Processing Missing Data](https://arxiv.org/pdf/1801.03583.pdf)
+- [Detecting and treating outliers in Python](https://towardsdatascience.com/detecting-and-treating-outliers-in-python-part-1-4ece5098b755)
+- [Best-Practice Recommendations for Defining, Identifying, and Handling Outliers](https://journals.sagepub.com/doi/10.1177/1094428112470848)
+- [A Comprehensive Study of the Past, Present, and Future of Data Deduplication](https://ieeexplore.ieee.org/abstract/document/7529062)
+- 
 
