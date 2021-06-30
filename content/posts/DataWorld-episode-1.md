@@ -2,7 +2,7 @@
 title = "DataWorld: Episode 1, Cleaning"
 date = 2021-06-23T08:10:55+05:30
 type = "post"
-description = "Basics of data preperation."
+description = "Cleaning a basic dataset"
 in_search_index = true
 [taxonomies]
 tags = ["Data", "Cleaning"]
@@ -22,7 +22,7 @@ In this post, I hope to provide a quick set of steps you can take when cleaning 
 
 ### Step 0 - Document  
 ![image](/images/ML_CYCLE.PNG "Produced by Pablo Duboue")
-Before data can be used, it must be processed. The steps of the data processing pipeline must be coded and documented fully. A good practice is to retain your original datasets and generate the final version via version controlled scripts. Another good practice is to set aside a portion for the test set before [processing](https://www.kaggle.com/alexisbcook/data-leakage).
+Before data can be used in most machine learning projects, it must be processed. For example, in a computer vision project image sizes will need to be standardised. It's best the steps taken during the data processing pipeline must be coded and documented fully. A good practice is to retain your original dataset and generate the final version via version controlled scripts. Another good practice is to set aside the validation set before [processing](https://www.kaggle.com/alexisbcook/data-leakage).
 
 Prior to doing any steps, make sure to throughly understand, record and catalogue the data collection process. You need to be able to answer questions like what sensors/forms/surveys were used, how is the data stored, how was the data [labelled](https://github.com/heartexlabs/awesome-data-labeling), who collected the data etc. This will be important when it comes time to debug. 
 
