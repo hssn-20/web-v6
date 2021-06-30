@@ -1,5 +1,5 @@
 +++
-title = "Data world: Episode 1, Cleaning"
+title = "DataWorld: Episode 1, Cleaning"
 date = 2021-06-23T08:10:55+05:30
 type = "post"
 description = "Basics of data preperation."
@@ -9,22 +9,22 @@ tags = ["Data", "Cleaning"]
 [extra]
 og_preview_img = "/images/joplin-desktop.png"
 +++
-![image](https://raw.githubusercontent.com/chiphuyen/ml-interviews-book/master/contents/images/image1.png)
+![image](https://raw.githubusercontent.com/chiphuyen/ml-interviews-book/master/contents/images/image1.png "ML Cycle by Chip Huyen")
 
-It's a cliche that data scientists spend 80% of their time cleaning/processing data. This is essential work. The tasks differ based on the type of data you're dealing with but they share a few [commonalities](https://machinelearningmastery.com/data-preparation-for-machine-learning/) which are: 
+It's a cliche that data scientists spend 80% of their time cleaning/processing data. Although it can be tedious at times, this is essential work. The tasks can differ for every dataset you're dealing with but they share a few [commonalities](https://machinelearningmastery.com/data-preparation-for-machine-learning/) which are: 
 > - Data Cleaning:  Identifying and correcting mistakes or errors in the data.
 > - Feature Selection:  Identifying those input variables that are most relevant to the task.
 > - Data Transforms:  Changing the scale or distribution of variables.
 > - Feature Engineering:  Deriving new variables from available data.
 > - Dimensionality Reduction:  Creating compact projections of the data 
 
-In this post, I hope to provide a quick set of first steps you can take when cleaning simple data projects.
+In this post, I hope to provide a quick set of steps you can take when cleaning a simple dataset.
 
 ### Step 0 - Document  
-![image](/images/ML_CYCLE.PNG)
+![image](/images/ML_CYCLE.PNG "Produced by Pablo Duboue")
 Before data can be used, it must be processed. The steps of the data processing pipeline must be coded and documented fully. A good practice is to retain your original datasets and generate the final version via version controlled scripts. Another good practice is to set aside a portion for the test set before [processing](https://www.kaggle.com/alexisbcook/data-leakage).
 
-Prior to doing any steps, make sure to throughly understand, record and catalogue the data collection process. You need to be able to answer questions like what sensors/forms/surveys were used, how is the data stored, who collected the data etc. This will be important when it comes time to debug. 
+Prior to doing any steps, make sure to throughly understand, record and catalogue the data collection process. You need to be able to answer questions like what sensors/forms/surveys were used, how is the data stored, how was the data [labelled](https://github.com/heartexlabs/awesome-data-labeling), who collected the data etc. This will be important when it comes time to debug. 
 
 #### Step 1 - Check for duplicates & outliers 
 Although it's fairly straight forward to [remove duplicates](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop_duplicates.html), it's also easy to do it without being cognizant of context. Remember to check the type/number of duplicates before removal. 
@@ -32,7 +32,7 @@ Although it's fairly straight forward to [remove duplicates](https://pandas.pyda
 There a lot of different ways of defining an outlier, a common definition is; any data point that's significantly different from a given population. What is meant by 'significant' really depends on your dataset.  A reasonable algorithm for most cases is an [IsolationForest.](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html).   
  
 #### Step 2 - Check the missing data
-What type of data is missing? Is it miscoded? How is the missing data labelled? Is it missing completely at random or is the missingness specific? What is the structure of the missing information? These are just a few of the questions you should be able to answer. The [missingno](https://github.com/ResidentMario/missingno) library provides a quick way to visualise the missing data and hopefuly begin to answer some of those questions. 
+What type of data is missing? Is it miscoded? How is the missing data labelled(NaN, N/A, Null or something else)? Is it missing completely at random or is the missingness specific? What is the structure of the missing information? These are just a few of the questions you should be able to answer. The [missingno](https://github.com/ResidentMario/missingno) library provides a quick way to visualise the missing data and hopefuly begin to answer some of those questions. 
 #### Step 3 - Impute 
 Scikit-learn [provides](https://scikit-learn.org/stable/modules/impute.html) a few functions that can be used to impute missing values however this step isn't always [necessary](https://www.paultwin.com/wp-content/uploads/Lodder_1140873_Paper_Imputation.pdf) as you can get away with listwise or pairwise deletion for certain datasets. The question of when that is the case really depends on domain. 
 #### Conclusion 
