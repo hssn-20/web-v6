@@ -29,7 +29,7 @@ Prior to doing any steps, make sure to throughly understand, record and catalogu
 #### Step 1 - Check for duplicates & outliers 
 Although it's fairly straight forward to [remove duplicates](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop_duplicates.html), it's also easy to do it without being cognizant of context. Remember to check the type/number of duplicates before removal. 
 
-There a lot of different ways of defining an outlier, a common definition is; any data point that's significantly different from a given population. What is meant by 'significant' really depends on your dataset.  A reasonable algorithm for most cases is an [IsolationForest.](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html).   
+There a lot of different ways of defining an outlier, a common definition is; any data point that's significantly different from a given population. What is meant by 'significant' really depends on your dataset.  A reasonable algorithm for most cases is an [IsolationForest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html).   
  
 #### Step 2 - Check the missing data
 What type of data is missing? Is it miscoded? How is the missing data labelled(NaN, N/A, Null or something else)? Is it missing completely at random or is the missingness specific? What is the structure of the missing information? These are just a few of the questions you should be able to answer. The [missingno](https://github.com/ResidentMario/missingno) library provides a quick way to visualise the missing data and hopefuly begin to answer some of those questions. 
