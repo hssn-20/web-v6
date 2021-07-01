@@ -12,15 +12,15 @@ og_preview_img = "/images/joplin-desktop.png"
 ![image](https://raw.githubusercontent.com/chiphuyen/ml-interviews-book/master/contents/images/image1.png "ML Cycle by Chip Huyen")
 
 It's a cliche that data scientists spend 80% of their time cleaning/processing data. Although it can be tedious at times, this is essential work. The tasks can differ for every dataset you're dealing with but they share a few [commonalities](https://machinelearningmastery.com/data-preparation-for-machine-learning/) which are: 
-> - Data Cleaning:  Identifying and correcting mistakes or errors in the data.
-> - Feature Selection:  Identifying those input variables that are most relevant to the task.
-> - Data Transforms:  Changing the scale or distribution of variables.
-> - Feature Engineering:  Deriving new variables from available data.
-> - Dimensionality Reduction:  Creating compact projections of the data 
+> - Data Cleaning
+> - Feature Selection
+> - Data Transforms
+> - Feature Engineering
+> - Dimensionality Reduction
 
 In this post, I hope to provide a quick set of steps you can take when cleaning a simple dataset.
 
-### Step 0 - Document  
+#### Step 0 - Document  
 ![image](/images/ML_CYCLE.PNG "Produced by Pablo Duboue")
 Before data can be used in most machine learning projects, it must be processed. For example, in a computer vision project image sizes will need to be standardised. It's best the steps taken during the data processing pipeline must be coded and documented fully. A good practice is to retain your original dataset and generate the final version via version controlled scripts. Another good practice is to set aside the validation set before [processing](https://www.kaggle.com/alexisbcook/data-leakage).
 
