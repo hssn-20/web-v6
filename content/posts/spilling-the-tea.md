@@ -9,7 +9,7 @@ tags = ["Data", "Data Pipelines","Kaggle"]
 [extra]
 og_preview_img = "/images/joplin-desktop.png"
 +++
-So there's currrently some drama in a kaggle competition. It looks like the organisers didnt properly prepare the validation/test set. This resulted in label leakage resulting in skewed results. As I stated in the previous post, data processing is key. In this post, I hope to go over the mistakes made. 
+There's currrently some [drama](https://www.kaggle.com/c/seti-breakthrough-listen/discussion/246772) in one of the kaggle competition. It looks like the [organisers](https://www.kaggle.com/c/seti-breakthrough-listen/discussion/246782) didnt properly prepare the test set, resulting in label leakage. As I stated in the previous post, data processing is key. In this post, I hope to go over the mistakes made. 
 
 But first, a quick history....
 
