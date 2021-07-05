@@ -13,6 +13,4 @@ So there's currrently some drama in a kaggle competition. It looks like the orga
 
 But first, a quick history....
 
-#### SETI
-
 {{ youtube(id="P_vTS46ivck") }}
