@@ -15,4 +15,4 @@ But first, a quick history....
 
 #### SETI
 
-[image](https://www.youtube.com/embed/P_vTS46ivck)
+{{ youtube(id="P_vTS46ivck" }}
