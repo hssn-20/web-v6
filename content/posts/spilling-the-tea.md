@@ -9,8 +9,8 @@ tags = ["Data", "Data Pipelines","Kaggle"]
 [extra]
 og_preview_img = "/images/joplin-desktop.png"
 +++
-There's currrently some [drama](https://www.kaggle.com/c/seti-breakthrough-listen/discussion/246772) in one of the kaggle competition. It looks like the [organisers](https://www.kaggle.com/c/seti-breakthrough-listen/discussion/246782) didnt properly prepare the test set, resulting in label leakage. As I stated in the previous post, data processing is key. In this post, I hope to go over the mistakes made. 
+There's currrently some [drama](https://www.kaggle.com/c/seti-breakthrough-listen/discussion/246772) in one of the kaggle competition. It looks like the [organisers](https://www.kaggle.com/c/seti-breakthrough-listen/discussion/246782) didn't properly prepare the test set, resulting in label leakage. As I stated in the previous post, data processing is key.Data leakages come in two forms. In this post, I hope to go over what a data leakage is and how to generaly avoid it. 
 
-But first, a quick history....
+But first, a quick history of SETI....
 
 {{ youtube(id="P_vTS46ivck") }}
