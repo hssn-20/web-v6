@@ -1,8 +1,8 @@
 +++
-title = "Spilling the tea"
+title = "Spilling the Tea"
 date = 2021-06-26T16:10:52+05:45
 type = "post"
-description = "Data leakage ruined a competition"
+description = "When a data leak ruined a competition"
 in_search_index = true
 [taxonomies]
 tags = ["Data", "Data Pipelines","Kaggle"]
