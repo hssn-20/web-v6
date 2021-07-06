@@ -2,15 +2,15 @@
 title = "Spilling the tea"
 date = 2021-06-26T16:10:52+05:45
 type = "post"
-description = "A story of how data leakage ruined a competition"
+description = "Data leakage ruined a competition"
 in_search_index = true
 [taxonomies]
 tags = ["Data", "Data Pipelines","Kaggle"]
 [extra]
 og_preview_img = "/images/joplin-desktop.png"
 +++
-There's currrently some [drama](https://www.kaggle.com/c/seti-breakthrough-listen/discussion/246772) in one of the kaggle competition. It looks like the [organisers](https://www.kaggle.com/c/seti-breakthrough-listen/discussion/246782) didn't properly prepare the test set, resulting in label leakage. As I stated in the previous post, data processing is key.Data leakages come in two forms. In this post, I hope to go over what a data leakage is and how to generaly avoid it. 
+This is going to be a quick post. There's currrently some [drama](https://www.kaggle.com/c/seti-breakthrough-listen/discussion/246772) in one of the kaggle competitions. It looks like the [organisers](https://www.kaggle.com/c/seti-breakthrough-listen/discussion/246782) didn't properly prepare the test set, resulting in a [label leakage](https://www.kaggle.com/kazanova/leak-submission-lb-0-991). As I stated in my previous [post](https://www.hssn2.com/posts/dataworld-episode-1/), data processing is key. Mistakes will happen, evan at the best data companies. The important thing is to be open and document all steps of a process.
 
-But first, a quick history of SETI....
+###### Resources
+[AI Explainables](https://pair.withgoogle.com/explorables/)
 
-{{ youtube(id="P_vTS46ivck") }}
