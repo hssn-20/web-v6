@@ -7,7 +7,7 @@ in_search_index = true
 [taxonomies]
 tags = ["Data", "Cleaning"]
 [extra]
-og_preview_img = "/images/joplin-desktop.png"
+og_preview_img = "/images/example2.jpeg"
 +++
 **** Incomplete post****
 The economy has been described as “an instituted process of interaction between man and his environment, which results in a continuous supply of want-satisfying material means”. In laymen terms, it's how a society provisions its members. Provisions in this case mean anything a society deems necessary for an individual to survive.
@@ -19,6 +19,11 @@ To illustrate this arbitrary nature of poverty, I’d like to narrate the story 
 ## A Home
 
 Harpurhey, Manchester. Considered one of the most deprived areas in the UK, until the industrial revolution it was  quiet the opposite. A pleasant leafy suburb of Manchester with grand swimming pools, old churchs and new buildings.
+
+[image](/images/example2.jpeg)
+
+[image](/images/harpourhey.jpeg)
+
 
 So what happened? 
 
