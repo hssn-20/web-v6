@@ -21,9 +21,9 @@ To illustrate this arbitrary nature of poverty, I’d like to narrate the story 
 
 Harpurhey, Manchester. Considered one of the most deprived areas in the UK, until the industrial revolution it was  quiet the opposite. A pleasant leafy suburb of Manchester with grand swimming pools, old churchs and new buildings.
 
-[!image](/images/example2.jpeg)
+![image](/images/example2.jpeg)
 
-[!image](/images/hapourhey.jpeg)
+![image](/images/hapourhey.jpeg)
 
 
 So what happened? 
