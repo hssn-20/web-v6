@@ -9,7 +9,7 @@ tags = ["Data", "Feature-Selection"]
 [extra]
 og_preview_img = "/images/joplin-desktop.png"
 +++
-
+**** Incomplete Post****
 In this post I hope to provide what steps you can take when doing feature selection. 
 
 #### Variance
