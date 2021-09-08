@@ -11,7 +11,7 @@ og_preview_img = "/images/joplin-desktop.png"
 +++
 ![image](https://raw.githubusercontent.com/chiphuyen/ml-interviews-book/master/contents/images/image1.png "ML Cycle by Chip Huyen")
 
-It's a cliche that data scientists spend 80% of their time cleaning/processing data. Although it can be tedious at times, this is essential work. The tasks can differ for every dataset you're dealing with but they share a few [commonalities](https://machinelearningmastery.com/data-preparation-for-machine-learning/) which are: 
+It's a cliche that data scientists spend 80% of their time cleaning/processing data. Although it can be tedious at times, this is essential work. The tasks  differ for every dataset you're dealing with but they share a few [commonalities](https://machinelearningmastery.com/data-preparation-for-machine-learning/) which are: 
 > - Data Cleaning
 > - Feature Selection
 > - Data Transforms
@@ -22,7 +22,7 @@ In this post, I hope to provide a quick set of steps you can take when cleaning 
 
 #### Step 0 - Document  
 ![image](/images/ML_CYCLE.PNG "Produced by Pablo Duboue")
-Before data can be used in most machine learning projects, it must be processed. For example, in a computer vision project image sizes will need to be standardised. It's best the steps taken during the data processing pipeline must be coded and documented fully. A good practice is to retain your original dataset and generate the final version via version controlled scripts. Another good practice is to set aside the validation set before [processing](https://www.kaggle.com/alexisbcook/data-leakage).
+Before data can be used in most machine learning projects, it must be processed. For example, in a computer vision project image sizes will need to be standardised. It's best the steps taken during the data processing pipeline be coded and documented fully. A good practice is to retain your original dataset and generate the final version via version controlled scripts. Another good practice is to set aside the validation set before [processing](https://www.kaggle.com/alexisbcook/data-leakage).
 
 Prior to doing any steps, make sure to throughly understand, record and catalogue the data collection process. You need to be able to answer questions like what sensors/forms/surveys were used, how is the data stored, how was the data [labelled](https://github.com/heartexlabs/awesome-data-labeling), who collected the data etc. This will be important when it comes time to debug. 
 
