@@ -8,13 +8,14 @@ in_search_index = true
 tags = ["XGB", "Model_creation", "Algorithm"]
 [extra]
 og_preview_img = "/images/Decision_Tree_Depth_2.png"
-+++```
++++
 
 I've been meaning to get back into writing for a while, however life had other plans. To ease myself back in (and keep my sanity), the next few episodes will mostly consist of notes/reviews I've made made reading. Feel free to skip to the bottom of this post if you just need the links/resources. Without further ado, I present XGBoost!
 
 #### Gradient Boosted Decision Trees - overview and history.   
 GBDTs are a specific form of [boosting](https://arxiv.org/pdf/1403.1452.pdf). Boosting was first pioneered by Robert Schaphire and Yoav Freund, they recieved the Godel Prize for their work. For our case, its suffiecient to know that boosting works by leveragig weak learners into strong ones. This is done by iteratively applying base learners on the training data. If trained on the same data, the two code snippets below would produce the same predictions:
 Example 1 
+
 ```python 
 from sklearn.tree import DecisionTreeRegressor
 tree_1 = DecisionTreeRegressor(max_depth=2, random_state=2)
