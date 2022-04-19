@@ -48,7 +48,7 @@ GBDTS are currently the industry standard when it comes to structured/tabular da
 - Dont forget to set the weight paramater, if known beforehand. 
 
 #### Conclusion 
-Ok, so you probably read that list wondering where's the difference. Here's the secret, there isn't (except maybe in [results](https://arxiv.org/abs/2106.03253)). Although the underlying mechanism is different, the process of creating and validating GBDT models are no different to what you would do when creating regressions or random forests. So take your time, do your experiments, document those results and repeat. This is a science afterall. 
+Ok, so you probably read that list wondering where's the difference. Here's the secret, there isn't (except maybe in [results](https://arxiv.org/abs/2106.03253)). Although the underlying mechanism are different, the process of creating and validating GBDT models are no different to what you would do when creating regressions or random forests. So take your time, do your experiments, document those results and repeat. This is a science afterall. 
 
 
 
