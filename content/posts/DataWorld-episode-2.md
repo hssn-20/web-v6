@@ -1,20 +1,19 @@
 +++
 title = "DataWorld: Episode 2, XGBoost & Friends"
-date = 2022-04-19T08:10:55+05:30
+date = 2022-04-19T00:12:55+05:30
 type = "post"
-description = "Effectively making use of Gradient Boosted Trees"
+description = "Effectively making use of Gradient Boosted Decision Trees"
 in_search_index = true
 [taxonomies]
 tags = ["XGB", "Model_creation", "Algorithm"]
 [extra]
 og_preview_img = "/images/Decision_Tree_Depth_2.png"
 +++
+I've been meaning to get back into writing for a while, however life has had other plans. To ease myself back in (and keep my sanity), the next few episodes will mostly consist of notes/reviews I've made over the past year. Feel free to skip to the bottom of this post if you just need the links/resources. Without further ado, I present GBDTs!
 
-I've been meaning to get back into writing for a while, however life had other plans. To ease myself back in (and keep my sanity), the next few episodes will mostly consist of notes/reviews I've made made reading. Feel free to skip to the bottom of this post if you just need the links/resources. Without further ado, I present XGBoost!
-
-#### Gradient Boosted Decision Trees - overview and history.   
-GBDTs are a specific form of [boosting](https://arxiv.org/pdf/1403.1452.pdf). Boosting was first pioneered by Robert Schaphire and Yoav Freund, they recieved the Godel Prize for their work. For our case, its suffiecient to know that boosting works by leveragig weak learners into strong ones. This is done by iteratively applying base learners on the training data. If trained on the same data, the two code snippets below would produce the same predictions:
-Example 1 
+#### Gradient Boosted Decision Trees - overview
+![image](https://hudsonthames.org/wp-content/uploads/2019/09/bagging-1.png "Bagging classifier by Proskurin Oleksandr")
+GBDTs are a specific form of [boosting](https://arxiv.org/pdf/1403.1452.pdf). Boosting was first pioneered by Robert Schaphire and Yoav Freund, who've recieved the Godel Prize for their work. In our case, its sufficient to know that boosting works by leveraging weak learners into strong ones. This is done by iteratively applying base learners on training data. If trained on the same data, the two code snippets below would produce the same predictions:
 
 ```python 
 from sklearn.tree import DecisionTreeRegressor
@@ -30,24 +29,31 @@ y2_pred = tree_2.predict(X_test)
 y_pred = y1_pred + y2_pred
 ```
 
-Example 2 
-
 ```python 
 from sklearn.ensemble import GradientBoostingRegressor
 gbr = GradientBoostingRegressor(max_depth=2, n_estimators=2, random_state=2, learning_rate=1.0)
 gbr.fit(X_train, y_train)
 y_pred = gbr.predict(X_test)
 ```
+#### When to use them
+GBDTS are currently the industry standard when it comes to structured/tabular data, both for their ease of use and perfomence. In fact in most Kaggle competitions you'd be remiss not to use them, either as part of a [stacked](http://rasbt.github.io/mlxtend/user_guide/classifier/StackingCVClassifier/) [model](https://www.kaggle.com/code/hiro5299834/tps-jan-2022-blend-stacking-models) or in [conjuction](https://www.kaggle.com/code/chasembowers/sequence-postprocessing-v2-67-lb/notebook) with neural network embeddings. However GBDTs do have clear disadvantages when it comes to explainability, NLP or vision centric tasks. For those cases and a few others, a different model type would be more suitable. 
+
+#### The Do's And The Don'ts
+- Do use the correct scoring metrics. While an accuracy score of 99% sounds great, it probably isn't what you should be measuring when dealing with [highly imbalanced data](https://stats.stackexchange.com/questions/222558/classification-evaluation-metrics-for-highly-imbalanced-data). 
+- Do create a holdout set. This is a step a lot of people in industry forget, however it pays dividends when you can objectively compare results across multiple models. 
+- Do create a strong baseline model. A lot of people when modelling jump straight into feature engineering or hyperparamter optimisation without fully understanding their data. A baseline lets you know whats predictable before spending hours/days/weeks trying to do what mathematically isn't possible.
+- Do consult domain experts. Another common error with data scientists is waiting a few weeks into a project before reaching out to cross functional team members, and that's usually just to figure why a column has been mislabelled. Don't be that person, reach out early and reach out often. Whatever implicit and explicit knowledge you can embed into the modelling stage will pay double or more in your results. 
+- Do spend time feature engineering & hyperparamter optimisation. [Optuna](https://optuna.org/#code_examples) is currently my favourite library for doing hyperparamter optimisation, but find one that works for you. The important thing is to be scientific in your search. 
+- Dont forget to try other model types. An ensamble of non-correlated models usually does better than a single model on its own. 
+- Dont forget to set the weight paramater, if known beforehand. 
+
+#### Conclusion 
+Ok, so you probably read that list wondering where's the difference. Here's the secret, there isn't (except maybe in [results](https://arxiv.org/abs/2106.03253). Although the underlying mechanism is different, the process of creating and validating GBDT models are no different to what you would do when creating regressions or random forests. So take your time, do your experiments, document those results and repeat. This is a science afterall. 
 
 
-#### Sources
+
+#### Sources / Resources
 - [Hands-On Gradient Boosting with XGBoost and scikit-learn](https://github.com/PacktPublishing/Hands-On-Gradient-Boosting-with-XGBoost-and-Scikit-learn)
-- [Detecting and treating outliers in Python](https://towardsdatascience.com/detecting-and-treating-outliers-in-python-part-1-4ece5098b755)
-- [Anomaly Detection Using Isolation Forest in Python](https://blog.paperspace.com/anomaly-detection-isolation-forest/)
-- [Best-Practice Recommendations for Defining, Identifying, and Handling Outliers](https://journals.sagepub.com/doi/10.1177/1094428112470848)
-- [A Comprehensive Study of the Past, Present, and Future of Data Deduplication](https://ieeexplore.ieee.org/abstract/document/7529062)
-- [When to Impute? Imputation before and during cross-validation](https://arxiv.org/pdf/2010.00718.pdf)
-- [New data preprocessing trends based on ensemble of multiple preprocessing techniques](https://www.sciencedirect.com/science/article/pii/S0165993620302740)
-- [When and how should multiple imputation be used for handling missing data in randomised clinical trials – a practical guide with flowcharts](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-017-0442-1https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-017-0442-1)
-- [Toward Data Cleaning with a Target Accuracy:A Case Study for Value Normalization](https://arxiv.org/pdf/2101.05308.pdf)
-
+- [Hyperparam Optimisation Examples](https://github.com/rasbt/machine-learning-notes/tree/main/hyperparameter-tuning-methods)
+- [Awesome XGBoost](https://github.com/dmlc/xgboost/tree/master/demo)
+- [Gradient Boosted papers](https://github.com/benedekrozemberczki/awesome-gradient-boosting-papers)
